@@ -32,7 +32,7 @@ I strongly recommend to use Anaconda environment. This repo may be able to be us
 
 ## Installation of dependencies
 
-'''pip3 install Kivy'''
-'''pip3 install Kivy-Garden'''
-'''cd kivyIOS'''
-'''python3 main.py'''
+```pip3 install Kivy```
+```pip3 install Kivy-Garden```
+```cd kivyIOS```
+```python3 main.py```
