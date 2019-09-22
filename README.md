@@ -2,7 +2,7 @@
 
 <img src="./git/0.png">
 
-## Purpose
+## 
 
 ### 1. Detection of Specific Object on Raspberry Pi
 - Based on your model to detect a specific object in which you want to get the result, the database is sent to Firebase.
@@ -14,9 +14,9 @@
 - The command which you send to Firebase is taken by the robot immediately.
 
 
-<img src="./git/1.png" width="514" height="324">\t\t<img src="./git/3.png" width="312" height="324">
+<img src="./git/1.png" width="514" height="324">    <img src="./git/3.png" width="312" height="324">
 
 
 
 
-# AI-Realtime-Image-Recognition-and-Notification
+## Requirements

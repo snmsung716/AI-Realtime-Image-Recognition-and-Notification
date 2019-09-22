@@ -18,11 +18,6 @@ import os
 from kivy.core.window import Window
 Window.clearcolor = (1, 1, 1, 1)
 
-# import certifi
-# import os
-
-# # Here's all the magic !
-# os.environ['SSL_CERT_FILE'] = certifi.where()
 
 if platform == 'ios':
     from pyobjus import autoclass, objc_dict
@@ -30,7 +25,6 @@ if platform == 'ios':
     CACHE_DIR = os.path.join(root_folder, 'cache')
     cache_folder = os.path.join(root_folder, 'cache')
     CACHE_DIR = cache_folder
-    #CACHE_DIR = "Library/Caches"
     jsonDir = os.path.join(CACHE_DIR, "json")
     alternativeDir = "fonts"
     databaseDir = ""
@@ -38,9 +32,6 @@ else:
     CACHE_DIR = "cache"
     jsonDir = os.path.join(CACHE_DIR, "json")
 
-    # IOS
-    # databaseDir = ""
-    # alternativeDir = "fonts"
 
 class ImageButton(ButtonBehavior, AsyncImage):
     pass
@@ -48,8 +39,6 @@ class ImageButton(ButtonBehavior, AsyncImage):
 class MainWindow(BoxLayout):
     def __init__(self, **kwargs):
         super(MainWindow, self).__init__(**kwargs)
-        # icon = AsyncImage(source='https://firebasestorage.googleapis.com/v0/b/crossplatform-44b4f.appspot.com/o/images%2Fbottle.jpg?alt=media&token=f560138d-0d19-452b-9d95-8f399cbca9f9')
-        # self.add_widget(ImageButton(source= icon, allow_stretch=True, keep_ratio=False))
         pass
 
 
@@ -62,7 +51,6 @@ class GetWords(TextInput):
 class CenteredAsyncImage(AsyncImage):
     def __init__(self, **kwargs):
         super(CenteredAsyncImage, self).__init__(**kwargs)
-        # icon = 'https://firebasestorage.googleapis.com/v0/b/crossplatform-44b4f.appspot.com/o/images%2Fbottle.jpg?alt=media&token=f560138d-0d19-452b-9d95-8f399cbca9f9'
         pass
 
 
@@ -171,8 +159,8 @@ ScreenManager:
 #{"Parent": {"Child1": "Value", "Child2": "Value"}}
 class MyApp(App):
 
-    url = 'https://crossplatform-44b4f.firebaseio.com/users/xBjjv6LcanbE7BE8wpC7lJhwssC2/details/.json'
-    auth_key = 'q2l2mXYVKGPUvGLISiGKECmOVPqyceS1QlVFPWNw' # Refer to the YouTube video on where to find this.
+    url = 'Firebase URL'
+    auth_key = 'Firebase auth_key' # Refer to the YouTube video on where to find this.
 
     
 
@@ -186,18 +174,13 @@ class MyApp(App):
 
     
     def on_start(self):
-        # response = requests.get('https://firebasestorage.googleapis.com/v0/b/crossplatform-44b4f.appspot.com/o/images%2Fbottle.jpg?alt=media&token=f560138d-0d19-452b-9d95-8f399cbca9f9')
-        # image = Loader.image('https://firebasestorage.googleapis.com/v0/b/crossplatform-44b4f.appspot.com/o/levy2.jpg?alt=media&token=54a4d612-26a3-4dee-b31e-7600debe4e2b')
-        icon = 'https://firebasestorage.googleapis.com/v0/b/crossplatform-44b4f.appspot.com/o/images%2Fbottle.jpg?alt=media&token=f560138d-0d19-452b-9d95-8f399cbca9f9'
-        # print("icon", icon)
-        robotTaken = self.root.ids["image_taken"]
-        robotTaken.source = icon
-        # pass
+        
+        pass
 
     def finish_ios_init(self, *args):
         self.onesignal_object = autoclass("OneSignal")
         mock_launch_options = objc_dict({})
-        self.onesignal_object.initWithLaunchOptions_appId_(mock_launch_options, "e180a14f-927a-40d1-87bf-4090c1118d76")
+        self.onesignal_object.initWithLaunchOptions_appId_(mock_launch_options, "Your OneSignal App_ID")
 
     def patch(self, JSON):
         to_database = json.loads(JSON)
