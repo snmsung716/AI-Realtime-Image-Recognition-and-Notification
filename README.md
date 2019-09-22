@@ -1,8 +1,7 @@
 # AI-Realtime-Image-Recognition-and-command
 
 
-
-![1](./git/0.png)
+<img src="./git/0.png" width="324" height="324">
 
 1. Detection of Specific Object on Raspberry Pi
 - Based on your model to detect a specific object in which you want to get the result, the database is sent to Firebase.
