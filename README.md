@@ -22,10 +22,10 @@
 ## Requirements
 
 - Kivy==1.11.1
-##### - Kivy-Garden==0.1.4
-##### - firebase==3.0.1
-##### - requests==2.22.0
-##### - Cython==0.29.13
+- Kivy-Garden==0.1.4
+- firebase==3.0.1
+- requests==2.22.0
+- Cython==0.29.13
 
 I strongly recommend to use Anaconda environment. This repo may be able to be used in Python 3.7 environment.
 
