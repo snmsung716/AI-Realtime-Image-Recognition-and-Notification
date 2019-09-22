@@ -4,9 +4,7 @@
 <img src="./git/0.png" width="324" height="324">
 
 
-<img src="./git/1.png" width="224" height="324">
-<img src="./git/2.png" width="224" height="324">
-<img src="./git/3.png" width="224" height="324">
+<img src="./git/1.png" width="224" height="324"><img src="./git/2.png" width="224" height="324"><img src="./git/3.png" width="224" height="324">
 
 1. Detection of Specific Object on Raspberry Pi
 - Based on your model to detect a specific object in which you want to get the result, the database is sent to Firebase.
