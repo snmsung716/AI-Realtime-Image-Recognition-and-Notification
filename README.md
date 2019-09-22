@@ -14,7 +14,7 @@
 - The command which you send to Firebase is taken by the robot immediately.
 
 
-<img src="./git/1.png" width="514" height="324">      <img src="./git/3.png" width="312" height="324">
+<img src="./git/1.png" width="514" height="324">&nbsp<img src="./git/3.png" width="312" height="324">
 
 
 
