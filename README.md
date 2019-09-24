@@ -38,25 +38,3 @@ I strongly recommend to use Anaconda environment. This repo may be able to be us
 - numpy
 
 I have used Coral Accelerator and Movidius on Raspberry Pi. But it is not necessary. Just with your labtop instead of Raspberry Pi, you are able to test this notification.
-
-
-## Installation of dependencies
-
-### IOS
-
-```pip3 install Kivy```
-
-```pip3 install Kivy-Garden```
-
-```cd kivyIOS```
-
-```python3 main.py```
-
-### Raspberry Pi
-
-```cd raspberry```
-
-```pip3 install main.py```
-
-
-```python3 main.py```
